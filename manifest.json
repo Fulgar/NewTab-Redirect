@@ -1,12 +1,11 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "New Tab Redirect",
   "short_name": "NTR!",
   "description": "Allows a user to provide the URL of the page that loads in a new tab.",
-  "version": "3.1.5",
+  "version": "3.2.0",
   "background": { 
-    "scripts" : ["js/background.js"],
-    "persistent": false
+    "service_worker" : "js/background.js"
   },
   "options_page":"options.html",
   "chrome_url_overrides": {
